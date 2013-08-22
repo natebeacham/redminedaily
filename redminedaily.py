@@ -4,15 +4,16 @@ import requests
 import datetime
 import jinja2 as jinja
 
+from dateutil import tz
 from email.mime.text import MIMEText
 
 config = json.loads(open('config.json').read())
 
-now = datetime.datetime.now()
-
 for key, value in config.items():
 	locals()[key] = value
 
+now = datetime.datetime.now().replace(tzinfo=tz.gettz('UTC')).astimezone(tz.gettz(TIMEZONE))
+print now
 def pad(string):
 	string = str(string)
 	if len(string) == 1:

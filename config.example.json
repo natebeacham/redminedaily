@@ -5,6 +5,7 @@
 	"FROM": "redmine@example.com",
 	"TO": ["nate@example.com"],
 	"SUBJECT": "Redmine Daily - %s",
+	"TIMEZONE": "America/Toronto",
 
 	"PROJECTS": [
 		["My Project", "myproject"]
