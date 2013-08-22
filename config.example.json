@@ -1,0 +1,12 @@
+{
+	"API_KEY": "thisismyapikey",
+	"BASE_URL": "http://redmine.example.com",
+
+	"FROM": "redmine@example.com",
+	"TO": ["nate@example.com"],
+	"SUBJECT": "Redmine Daily - %s",
+
+	"PROJECTS": [
+		["My Project", "myproject"]
+	]
+}
